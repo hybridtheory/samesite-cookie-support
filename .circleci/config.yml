@@ -8,16 +8,12 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-          - v1-go-dependencies-{{ checksum "go.mod" }}
+          - v1-go-dependencies-{{ checksum "go.mod" }}-{{ checksum "go.sum" }}
       - run:
           name: Install test framework
           command: |
             go get -u -v github.com/onsi/ginkgo/ginkgo
             go get -u -v github.com/onsi/gomega
-      - run:
-          name: Install dependencies
-          command: |
-            go mod tidy
       - run:
           name: Running Unit Tests
           command: |
@@ -34,7 +30,7 @@ jobs:
       - save_cache:
           paths:
             - "/go/pkg/mod"
-          key: v1-go-dependencies-{{ checksum "go.mod" }}
+          key: v1-go-dependencies-{{ checksum "go.mod" }}-{{ checksum "go.sum" }}
 
 workflows:
   version: 2
