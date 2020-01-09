@@ -27,6 +27,8 @@ jobs:
       - store_artifacts:
           path: coverage.html
           destination: coverage
+      - store_test_results:
+          path: test-reports
       - save_cache:
           paths:
             - "/go/pkg/mod"
