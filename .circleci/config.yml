@@ -10,6 +10,11 @@ jobs:
           keys:
           - v1-go-dependencies-{{ checksum "go.mod" }}
       - run:
+          name: Install test framework
+          command: |
+            go get -u -v github.com/onsi/ginkgo/ginkgo
+            go get -u -v github.com/onsi/gomega
+      - run:
           name: Install dependencies
           command: |
             go mod tidy
