@@ -36,7 +36,6 @@ func main() {
 
 ## Library Development and Testing
 
-    ginkgo ./...
 This library was developed using [ginkgo](https://github.com/onsi/ginkgo)
 and [gomega](https://github.com/onsi/gomega) test frameworks.
 
