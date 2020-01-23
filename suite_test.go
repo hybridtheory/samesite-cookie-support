@@ -1,4 +1,4 @@
-package main
+package samesite
 
 import (
 	. "github.com/onsi/ginkgo"

@@ -1,4 +1,4 @@
-package main
+package samesite
 
 // IsSameSiteCookieSupported returns true if through the user agent we have
 // detected a browser that supports SameSite=None behaviour. It returns
