@@ -34,6 +34,29 @@ func main() {
 }
 ```
 
+## Parser
+
+This parser is based on regular expressions and tries to aim specifically to those browsers
+we are interested in because they don't support SameSite cookies fully.
+
+The parser is focused in performance and relative accuracy.
+
+### Performance
+
+The library comes with a benchmark to check run times and place some tests around the expected
+execution time.
+
+| User-Agent        | Average (μs)      | Error (μs)|
+| ----------------- |:-----------------:| ---------:|
+| chrome            | 49.640            | ±49.590   |
+| ucbrowser         | 63.360            | ±74.163   |
+| iphone            | 37.720            | ±37.991   |
+| safari            | 77.740            | ±24.546   |
+| ubuntu            | 27.580            | ±41.001   |
+| embedded browser  | 203.480           | ±64.915   |
+| chrome version    | 51.950            | ±33.064   |
+| iphone            | 37.720            | ±37.991   |
+
 ## Library Development and Testing
 
 This library was developed using [ginkgo](https://github.com/onsi/ginkgo)
