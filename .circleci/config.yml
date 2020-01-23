@@ -38,5 +38,4 @@ workflows:
   version: 2
   test_build_and_deploy:
     jobs:
-      - unit-testing:
-          context: org-global
+      - unit-testing

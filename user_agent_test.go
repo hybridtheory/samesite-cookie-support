@@ -1,4 +1,4 @@
-package models
+package main
 
 import (
 	. "github.com/onsi/ginkgo"
@@ -7,6 +7,7 @@ import (
 )
 
 var _ = Describe("IsSameSiteCookieSupported", func() {
+
 	userAgentChecker := func(userAgent string, isSupported bool) {
 		Expect(IsSameSiteCookieSupported(userAgent)).To(Equal(isSupported))
 	}
