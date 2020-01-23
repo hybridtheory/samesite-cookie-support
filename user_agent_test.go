@@ -24,6 +24,7 @@ var _ = Describe("IsSameSiteCookieSupported", func() {
 		Entry("supports v13", "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/8.1.2 Mobile/15E148 Safari/605.1.15", true),
 		Entry("supports v11", "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/8.1.2 Mobile/15E148 Safari/605.1.15", true),
 		Entry("does not support v12", "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/8.1.2 Mobile/15E148 Safari/605.1.15", false),
+		Entry("does not support v12 minimal user agent", "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) Safari/605.1.15", false),
 	)
 
 	Describe("for Mac OSX", func() {

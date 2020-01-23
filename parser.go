@@ -6,7 +6,7 @@ import (
 )
 
 var (
-	iosVersion12Regexp             *regexp.Regexp = regexp.MustCompile(`\(iP.+; CPU .*OS 12[_\d]*.*\) AppleWebKit\/`)
+	iosVersion12Regexp             *regexp.Regexp = regexp.MustCompile(`\(iP.+; CPU .*OS 12[_\d]*.*\)`)
 	macosxVersionTenFourteenRegexp *regexp.Regexp = regexp.MustCompile(`\(Macintosh;.*Mac OS X 10_14[_\d]*.*\)`)
 	safariRegexp                   *regexp.Regexp = regexp.MustCompile(`Version\/.* Safari\/`)
 	macEmbeddedBrowserRegexp       *regexp.Regexp = regexp.MustCompile(`^Mozilla\/[\.\d]+ \(Macintosh;.*Mac OS X [_\d]+\) AppleWebKit\/[\.\d]+ \(KHTML, like Gecko\)$`)
