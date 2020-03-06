@@ -4,9 +4,6 @@ Go library to detect if SameSite=None cookies are supported.
 
 This code is an implementation of https://www.chromium.org/updates/same-site/incompatible-clients
 
-It uses [uap-go](https://github.com/ua-parser/uap-go) library to parse the user agents and applies
-the logic to determine if the browser supports SameSite=None cookies or not.
-
 ## Usage
 
 ### Install
