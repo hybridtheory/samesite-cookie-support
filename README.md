@@ -1,4 +1,4 @@
-# samesite-cookie-support [![CircleCI](https://circleci.com/gh/affectv/samesite-cookie-support.svg?style=svg)](https://circleci.com/gh/affectv/samesite-cookie-support)
+# samesite-cookie-support [![CircleCI](https://circleci.com/gh/hybridtheory/samesite-cookie-support.svg?style=svg)](https://circleci.com/gh/hybridtheory/samesite-cookie-support)
 
 Go library to detect if SameSite=None cookies are supported.
 
@@ -9,7 +9,7 @@ This code is an implementation of https://www.chromium.org/updates/same-site/inc
 ### Install
 
 ```bash
-go get github.com/affectv/samesite-cookie-support
+go get github.com/hybridtheory/samesite-cookie-support
 ```
 
 ### Example
@@ -19,7 +19,7 @@ package main
 
 import (
     "fmt"
-    uaparser "github.com/affectv/samesite-cookie-support"
+    uaparser "github.com/hybridtheory/samesite-cookie-support"
 )
 
 func main() {
